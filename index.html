@@ -1,62 +1,243 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="box">
-                <div class="heading">
-                    <h1>What do our customers use our cookware for</h1>
-                </div>
-                <div class="boxes">
-                    <button class="btn active">Fall Back in Love with Cooking  </button>
-                    <button class="btn">From Takeout to Home-Cooked</button>
-                    <button class="btn">Everyday Meals, but better</button>
-                    <button class="btn">Cooking with Confidence</button>    
-                </div>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mayur Sweets Almora</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="test.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar" aria-label="Main navigation">
+			<a class="brand" href="#home" aria-label="Website home">
+				<span class="brand-mark" aria-hidden="true">MS</span>
+				<span>Mayur Sweets</span>
+			</a>
 
+			<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-panel">
+				<span></span><span></span><span></span>
+			</button>
 
-                <div class="review-container" id="content1">
-                        <h3>this pan actually made me enjoy it again...</h3>
-                        <p id="rating">★★★★★</p>
-                        <p>I used to dread cooking after long workdays, but this pan actually made me enjoy it again...</p>
-                        <p> — Jessica T., Brooklyn, NY</p>                
-                </div>
-                
-                
-                <div class="review-container" id="content2">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p id="rating">★★★★</p>
-                        <p>I used to dread cooking after long workdays, but this pan actually made me enjoy it again...</p>
-                        <p> — Jessica T., Brooklyn</p>                
-                </div>
-            
-                <div class="review-container" id="content3">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p id="rating">★★★★★</p>
-                        <p>I used to dread cooking after long workdays, but this pan actually made me enjoy it again...</p>
-                        <p> — Jessica NY</p>                
-                </div>
+			<div class="nav-panel" id="nav-panel">
+				<ul class="nav-links">
+					<li><a href="#home" aria-current="page">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<a class="nav-cta" href="#contact">Get in touch</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="hero" id="home" aria-labelledby="hero-title">
+			<img class="hero-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=2200&q=85" alt="Freshly decorated celebration cake" fetchpriority="high">
+			<div class="hero-shade" aria-hidden="true"></div>
+			<div class="hero-content">
+				<p class="hero-kicker">A SWEET ALMORA TRADITION</p>
+				<h1 id="hero-title">Mayur Sweets<br><span>Almora</span></h1>
+				<p class="hero-copy">A little sweetness makes every moment memorable.</p>
+				<a class="hero-link" href="https://www.google.com/maps/search/?api=1&query=Mayur+Sweets+Almora" target="_blank" rel="noopener noreferrer">
+					Find us in Almora <span aria-hidden="true">&#8599;</span>
+				</a>
+			</div>
+			<p class="hero-note" aria-hidden="true">MADE TO BE SHARED</p>
+		</section>
+		<section class="about-section" id="about" aria-labelledby="about-title">
+			<div class="about-layout">
+				<div class="about-media">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" alt="Freshly decorated celebration cake" loading="lazy">
+				</div>
+				<div class="about-content">
+					<p class="about-kicker">ABOUT OUR SWEET SHOP</p>
+					<h2 id="about-title">We Create Incredibly Tasty Sweets</h2>
+					<p class="about-copy">At Mayur Sweets, every treat is made to bring a little more joy to your day. From much-loved classics to special occasion favourites, discover something delicious to share with the people you love.</p>
+					<div class="about-signoff">
+						<span class="about-signature" aria-hidden="true">Made with love</span>
+						<span class="about-caption">A LITTLE TASTE OF ALMORA</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="products-section" id="products" aria-labelledby="products-title">
+			<div class="products-heading">
+				<p class="products-kicker">FRESH FROM OUR KITCHEN</p>
+				<h2 id="products-title">Our Products</h2>
+				<p>Traditional favourites, made with care in Almora.</p>
+			</div>
+			<div class="products-grid">
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80" alt="Gulab jamun dessert" loading="lazy">
+					<h3>Gulab Jamun</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 320.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80" alt="Freshly prepared milk cake" loading="lazy">
+					<h3>Milk Cake</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 480.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80" alt="Chocolate sweet bites" loading="lazy">
+					<h3>Kaju Katli</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 780.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80" alt="Colourful dessert selection" loading="lazy">
+					<h3>Motichoor Laddu</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 360.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80" alt="Assorted Indian sweets" loading="lazy">
+					<h3>Soan Papdi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 280.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80&sat=-20" alt="Soft rasmalai dessert" loading="lazy">
+					<h3>Rasmalai</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 440.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80&sat=-25" alt="Pista barfi pieces" loading="lazy">
+					<h3>Pista Barfi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 560.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80&sat=-15" alt="Golden besan laddu" loading="lazy">
+					<h3>Besan Laddu</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 340.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80&sat=-15" alt="Crisp jalebi dessert" loading="lazy">
+					<h3>Jalebi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 240.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80&sat=10" alt="Creamy kalakand sweet" loading="lazy">
+					<h3>Kalakand</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 460.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80&sat=15" alt="Kesar peda sweet" loading="lazy">
+					<h3>Kesar Peda</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 400.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80&sat=15" alt="Coconut ladoo" loading="lazy">
+					<h3>Coconut Laddu</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 300.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80&sat=20" alt="Rich chocolate barfi" loading="lazy">
+					<h3>Chocolate Barfi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 520.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80&sat=25" alt="Fresh malai cham cham" loading="lazy">
+					<h3>Malai Cham Cham</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 420.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80&sat=25" alt="Sweet boondi" loading="lazy">
+					<h3>Boondi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 260.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80&sat=25" alt="Traditional imarti sweet" loading="lazy">
+					<h3>Imarti</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 320.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80&sat=30" alt="Dry fruit rolls" loading="lazy">
+					<h3>Dry Fruit Roll</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 820.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80&sat=30" alt="Traditional bal mithai" loading="lazy">
+					<h3>Bal Mithai</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 500.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80&sat=30" alt="Almora singauri sweet" loading="lazy">
+					<h3>Singauri</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 480.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80&sat=30" alt="Kesar peda pieces" loading="lazy">
+					<h3>Kesar Kalakand</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 540.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=640&q=80&sat=35" alt="Sweet and flaky sohan halwa" loading="lazy">
+					<h3>Sohan Halwa</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 600.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=640&q=80&sat=35" alt="Freshly made peda" loading="lazy">
+					<h3>Mathura Peda</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 380.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=640&q=80&sat=35" alt="Sweet anjeer rolls" loading="lazy">
+					<h3>Anjeer Roll</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 760.00</p>
+				</article>
+				<article class="product-item">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=640&q=80&sat=35" alt="Crisp balushahi" loading="lazy">
+					<h3>Balushahi</h3><p class="product-brand">Mayur Sweets</p><p class="product-price"><span>From</span>Rs. 360.00</p>
+				</article>
+			</div>
+		</section>
+		<section class="craft-section" id="craft" aria-labelledby="craft-title">
+			<div class="craft-layout">
+				<div class="craft-content">
+					<p class="craft-kicker">OUR WAY OF MAKING</p>
+					<h2 id="craft-title">How Our Pahadi Sweets Are Made</h2>
+					<p class="craft-intro">A little patience, good ingredients and plenty of care go into every mithai we make.</p>
+					<ol class="craft-steps">
+						<li>
+							<span class="craft-number" aria-hidden="true">01</span>
+							<div><h3>Pure Pahadi Khoya</h3><p>We slowly simmer pure milk from the hills into rich, creamy khoya for our traditional sweets.</p></div>
+						</li>
+						<li>
+							<span class="craft-number" aria-hidden="true">02</span>
+							<div><h3>Clean at Every Step</h3><p>We take care to keep our ingredients, preparation area and packing clean and hygienic.</p></div>
+						</li>
+						<li>
+							<span class="craft-number" aria-hidden="true">03</span>
+							<div><h3>Made Fresh with Care</h3><p>Each batch is prepared with attention to its flavour, texture and the little details.</p></div>
+						</li>
+					</ol>
+				</div>
+				<div class="craft-visual">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=85" alt="Chocolate sweets prepared with care" loading="lazy">
+				</div>
+			</div>
+		</section>
+		<section class="news-section" id="news" aria-labelledby="news-title">
+			<div class="news-heading">
+				<p class="news-kicker">FRESH FROM OUR KITCHEN</p>
+				<h2 id="news-title">Our Latest News</h2>
+			</div>
+			<article class="news-feature">
+				<div class="news-image">
+					<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=85" alt="Fresh sweets prepared for the festive season" loading="lazy">
+				</div>
+				<div class="news-copy">
+					<p class="news-label">FESTIVE SEASON UPDATE</p>
+					<h3>Festival season is here!</h3>
+					<p>Our festive preparations have begun. The kitchen is busy making fresh batches of traditional mithai with rich pahadi khoya, quality ingredients and the care every celebration deserves.</p>
+					<p>From family favourites to something special for your festive table, there is plenty of sweetness on the way. Visit us to see what's fresh today.</p>
+					<a class="news-link" href="#products">Explore our sweets <span aria-hidden="true">&#8599;</span></a>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="site-footer" id="contact">
+		<div class="footer-main">
+			<div class="footer-info">
+				<p class="footer-label">VISIT OUR SHOP</p>
+				<p class="footer-address">Mayur Sweets<br>Almora, Uttarakhand</p>
+				<a class="footer-link" href="https://www.google.com/maps/search/?api=1&amp;query=Mayur+Sweets+Almora" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">&#8599;</span></a>
+			</div>
+			<div class="footer-center">
+				<a class="footer-brand" href="#home" aria-label="Mayur Sweets home">
+					<span class="footer-brand-mark" aria-hidden="true">MS</span>
+					<span>Mayur Sweets</span>
+				</a>
+				<p>Sweet moments begin with traditional pahadi flavours, made with care and meant to be shared.</p>
+			</div>
+			<nav class="footer-nav" aria-label="Footer navigation">
+				<p class="footer-label">EXPLORE</p>
+				<a href="#about">Our story</a>
+				<a href="#products">Our sweets</a>
+				<a href="#news">Latest news</a>
+			</nav>
+		</div>
+		<div class="footer-bottom">
+			<p>Copyright &copy; 2026 Mayur Sweets. All rights reserved.</p>
+		</div>
+	</footer>
 
-            
-
-                <div class="review-container" id="content4">
-                        <h3>Lorem, ipsum dolor. </h3>
-                        <p id="rating">★★★★</p>
-                        <p>I used to dread cooking after long workdays, but this pan actually made me enjoy it again...</p>
-                        <p> — Jessica T., Brooklyn, NY</p>                
-                </div>
-                <div class="output"></div>
-
-            </div>
-
-            
-
-        </div>
-        <script src="script.js"></script>
-    </body>
-    </html>
+    <script src="test.js"></script>
+</body>
+</html>
